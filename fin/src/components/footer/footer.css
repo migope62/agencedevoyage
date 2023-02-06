@@ -1,0 +1,110 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    margin-top: 15vh;
+    padding-top: 5vh;
+    left: 0;
+    right: 0;
+    height: 28vh;
+    background-color: #1a6ab1;
+    color:black;
+}
+
+footer img {
+    margin-left: 1vh;
+}
+
+.cont {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1 / 2;
+    text-decoration: none;
+    color: black;
+}
+
+footer a {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1 / 2;
+    padding: 3vh;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2vh;
+    transition: transform 0.1s ease;
+        -webkit-transition: transform 0.1s ease;
+        -moz-transition: transform 0.1s ease;
+        -ms-transition: transform 0.1s ease;
+        -o-transition: transform 0.1s ease;
+}
+footer a:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+footer p {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    cursor: none;
+    grid-column: 1;
+    grid-row: 1 / 2;
+    font-family: 'Helvetica';
+    font-size: 2vh;
+    transition: transform 0.1s ease;
+        -webkit-transition: transform 0.1s ease;
+        -moz-transition: transform 0.1s ease;
+        -ms-transition: transform 0.1s ease;
+        -o-transition: transform 0.1s ease;
+}
+footer p:hover {
+    transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+}
+.resnav a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin-top: 15vh;
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        width: 100%;
+}
+    footer p {
+        font-size: 3vh;
+    }
+        footer p:hover {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+        }
+    footer a {
+        font-size: 4vh;
+    }
+    footer a:hover {
+        transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+    }
+}
